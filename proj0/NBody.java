@@ -1,8 +1,8 @@
 public class NBody{
 
-	public static final String imgBackground = "images/starfield.jpg";
-	public static final String path = "images/";
-	public static final String bgm = "audio/2001.mid";
+	private static final String imgBackground = "images/starfield.jpg";
+	private static final String path = "images/";
+	private static final String bgm = "audio/2001.mid";
 
 	public static double readRadius(String fileName){
 		In in = new In(fileName);
