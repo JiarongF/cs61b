@@ -25,6 +25,18 @@ public class LinkedListDeque<T>{
 		size = 0;
 	}
 
+	public LinkedListDeque(LinkedListDeque other){
+
+		sentinel = new IntNode(null, null , null);
+		sentinel.next = sentinel;
+		sentinel.prev = sentinel;
+		size = 0;
+
+		for(int i = 0; i< other.size(); i++){
+			addLast((T) other.get(i));
+		}
+	}
+
 
 
 	/** Return the number of items in the deque */
